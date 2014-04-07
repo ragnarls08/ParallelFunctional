@@ -284,3 +284,86 @@ bench({Name,M}) ->
 % %Worker does his job
 % worker(Master_PID, {Name,M}) ->
 % 	Master_PID ! {Name, bm(fun()->solve(M) end)}.
+
+
+% 2> sudoku:benchmarks().
+% {28011247,
+%  [{wildcat,0.175258},
+%   {diabolical,1.765024},
+%   {vegard_hanssen,5.669718},
+%   {challenge,2.3675770000000003},
+%   {challenge1,10.573148},
+%   {extreme,5.049308},
+%   {seventeen,2.411161}]}
+% 3> sudoku:benchmarksP(1).
+% {29557304,
+%  [{seventeen,2.558498},
+%   {extreme,5.345056},
+%   {challenge1,11.092886},
+%   {challenge,2.533143},
+%   {vegard_hanssen,5.996325},
+%   {diabolical,1.847451},
+%   {wildcat,0.183077}]}
+% 4> sudoku:benchmarksP(2).
+% {15461774,
+%  [{challenge1,11.068845999999999},
+%   {seventeen,2.6306599999999998},
+%   {extreme,5.511158},
+%   {vegard_hanssen,6.105086},
+%   {challenge,2.5147890000000004},
+%   {diabolical,1.877693},
+%   {wildcat,0.183351}]}
+% 5> sudoku:benchmarksP(3).
+% {13330488,
+%  [{challenge1,11.305231},
+%   {seventeen,2.6890639999999997},
+%   {extreme,5.642435000000001},
+%   {vegard_hanssen,6.437106},
+%   {challenge,2.660611},
+%   {diabolical,2.024762},
+%   {wildcat,0.170151}]}
+% 6> sudoku:benchmarksP(4).
+% {11402301,
+%  [{challenge1,11.21719},
+%   {extreme,5.5740479999999994},
+%   {vegard_hanssen,6.517399},
+%   {seventeen,2.763668},
+%   {challenge,2.72596},
+%   {diabolical,2.040557},
+%   {wildcat,0.184983}]}
+% 7> sudoku:benchmarksP(5).
+% {13334981,
+%  [{challenge1,13.332244000000001},
+%   {vegard_hanssen,6.479533},
+%   {extreme,5.685018},
+%   {challenge,5.145734999999999},
+%   {seventeen,2.7207510000000004},
+%   {diabolical,2.028387},
+%   {wildcat,0.19488999999999998}]}
+% 8> sudoku:benchmarksP(6).
+% {12787206,
+%  [{challenge1,12.785253},
+%   {vegard_hanssen,8.391698},
+%   {extreme,6.114833},
+%   {challenge,4.3892809999999995},
+%   {diabolical,4.110467},
+%   {seventeen,2.769498},
+%   {wildcat,0.203826}]}
+% 9> sudoku:benchmarksP(7).
+% {13271951,
+%  [{challenge1,13.270314},
+%   {vegard_hanssen,7.623057},
+%   {extreme,5.737845},
+%   {diabolical,4.371768},
+%   {seventeen,4.312239},
+%   {challenge,2.829621},
+%   {wildcat,0.5848949999999999}]}
+% 10> sudoku:benchmarksP(8).
+% {12774814,
+%  [{challenge1,12.772287},
+%   {extreme,7.257149},
+%   {vegard_hanssen,6.608787},
+%   {challenge,4.830015},
+%   {diabolical,4.322634},
+%   {seventeen,3.242264},
+%   {wildcat,0.502608}]}
